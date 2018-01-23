@@ -94,7 +94,7 @@ cc_sources = [
   'validators/xsdvalidator.cc']
 
 glibmm_dep = dependency('glibmm-2.4')
-libxml_dep = dependency('libxml-2.0', fallback: ['libxml2', 'xml2lib_dep'])
+libxml_dep = dependency('libxml-2.0')
 
 libxmlpp_lib = library('xml++', cc_sources,
 		       soversion: libxmlpp_soversion,
